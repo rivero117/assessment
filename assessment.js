@@ -12,6 +12,8 @@ assessmentButton.onclick = () => {
     return;
   }
 
+//診断結果表示エリアの作成
+  resultDivision.innerText = '';
 //headerDivisionの作成
     const headerDivision = document.createElement('div');
     headerDivision.setAttribute('class','card-header text-bg-primary');
@@ -33,8 +35,6 @@ assessmentButton.onclick = () => {
   //headerDivisionとbodyDivisionをresultDivisionに差し込む
   resultDivision.appendChild(headerDivision);
   resultDivision.appendChild(bodyDivision);
-  //診断結果表示エリアの作成
-  resultDivision.innerText = '';
  
   //ツイートエリアの作成
   tweetDivision.innerText = '';
